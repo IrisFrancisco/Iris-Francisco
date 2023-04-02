@@ -30,6 +30,25 @@ body{
     font-weight: 400;
 }
 
+button{
+  background: rgba(237, 217, 172, 0.8);
+  border-radius: 10px;
+  border-color: rgba(237, 217, 172, 0.8);
+  border-width: 0px;
+  padding: 16px;
+  color: white;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+}
+
+button:hover{
+  box-shadow: 0px 0px 10px white;
+}
+
 .bg-main-color{
     background-color: var(--bg-color-light);
 }
@@ -78,6 +97,12 @@ body{
     }
     }
 
+@media (max-width: 767.98px) {
+    .navbar-nav {
+      width: 100%;
+  }
+}
+
 
 .navbar-brand-image{
     max-height: 70px;
@@ -97,8 +122,8 @@ body{
 .capa-home{
     background: url('Lib/Images/Capa.png');
     background-size: cover;
-    background-position: center;
-    opacity: 0.6;
+    background-position: bottom;
+    opacity: 0.8;
     min-height: 90vh;
 
     align-items: flex-end;
@@ -116,33 +141,41 @@ body{
     /* Iris e Francisco */
     /*width: 825px;*/
     height: 101px;
-    font-family: 'White Angelica';
+    font-family: RetroSignature, sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: calc(24px + 5vw);
+    font-size: calc(32px + 7vw);
     line-height: 100%;
     text-shadow: 0px 0px 36px rgba(0, 0, 0, 0.45);
     display: inline-block;
+    transform: translateY(-70px);
+    letter-spacing: 10px;
 }
 
-@media (max-width: 399px) {
+@media (max-width: 470px) {
     .capa-home-names {
       display: block;
+      letter-spacing: 5px;
+      transform: translateY(0px);
     }
   }
 
 .capa-home-date{
     font-style: normal;
     font-weight: 700;
-    font-size: 24px;
+    font-size: calc(30px + 1vw);
+
     line-height: 100%;
     /* identical to box height, or 24px */
-    text-shadow: 0px 0px 36px rgba(0, 0, 0, 0.45);
-    letter-spacing: 20px;
+    text-shadow: 0px 4px 30px rgba(186, 159, 62, 0.5);
+    letter-spacing: 40px;
+    color: #ffffff;
+    text-align: center;
+    margin-top:30px;
 
 }
 
-@media (max-width: 399px) {
+@media (max-width: 767.98px) {
     .capa-home-date {
       letter-spacing: 4px;
     }
@@ -194,7 +227,7 @@ body{
       display: none !important;
     }
     .countdown{
-        padding:30px;
+        padding-bottom:30px;
     }
   }
 
@@ -223,8 +256,10 @@ body{
 @media (max-width: 767.98px) {
     .location-header {
       font-size: 95px;
+      line-height: 1;
     }
   }
+
 
 .location-title{
     font-family: RetroSignature;
@@ -440,6 +475,57 @@ body{
       left: 0%;
     }
   }
+
+
+.footer-text{
+    font-family: RetroSignature, sans-serif; 
+    font-size: 100px;
+    color:  #AE8870;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+@media (max-width: 767.98px) {
+    .footer-text {
+      font-size: 70px;
+      line-height: 1;
+    }
+  }
+
+.know-our-story-text{
+    font-family: RetroSignature, sans-serif; 
+    font-size: 100px;
+    color:  #FCF9F7;
+    margin-left: 15px;
+    margin-right: 15px;
+    line-height: 1;
+}
+
+@media (max-width: 767.98px) {
+    .know-our-story-text {
+      font-size: 70px;
+
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .know-our-story-text {
+       white-space: nowrap;
+    }
+    }
+
+.our-story-image{
+  width:100%
+}
+
+@media (max-width: 767.98px) {
+  .our-story-image {
+    min-width: 300px;
+    margin-bottom: 30px;
+  }
+}
+
+
 
 /* ----------------------------------------------------------*/
 /* ----------------------------------------------------------*/
