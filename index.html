@@ -21,7 +21,7 @@
             <a class="nav-link nav-link-current" aria-current="page" href="index.html">Início</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">A nossa história</a>
+            <a class="nav-link" href="Historia.html">A nossa história</a>
           </li>
           <li id="nav-logo-li" class="nav-item nav-logo-li">
               <a href="index.html"><img class="logo-image nav-link " src="Lib/Images/Logo.png" alt="logo"></a>
@@ -42,13 +42,14 @@
     <div class="capa-home">
       <div class='capa-home-text'>
         <p><span class="capa-home-names">Iris &&nbsp;</span><span class="capa-home-names">Francisco</span></p>
-        <p class="capa-home-date">26.08.2023</p>
+        <!--<p class="capa-home-date">26.08.2023</p>-->
       </div>
     </div>
 
     <!-- Countdown -->
     <section id="countdown container" class="row countdown gradient-base">
-        <div class="col-2 countdown-img"><img class="height-inherit" src="Lib/Images/Countdown.png" alt="countdown1"> </div>
+      <p class="capa-home-text capa-home-date">26.08.2023</p>
+        <div class="col-2 countdown-img"><img style="transform: translateY(-30px);" class="height-inherit" src="Lib/Images/Countdown.png" alt="countdown1"> </div>
         <div class="col container row">
             <div class="col-sm-3 countdown-time">
                 <div id="days" class="countdown-numbers">-</div>
@@ -67,7 +68,7 @@
                 <div class="countdown-labels">segundos</div>
             </div>
         </div>  
-        <div class="col-2 countdown-img"><img class="height-inherit" src="Lib/Images/Countdown2.png" alt="countdown2"></div>
+        <div class="col-2 countdown-img"><img style="transform: translateY(-30px);" class="height-inherit" src="Lib/Images/Countdown2.png" alt="countdown2"></div>
     </section>
 
     <!-- Location -->
@@ -90,15 +91,38 @@
           <p class="location-title">Copo d'Água</p>
           <p class="location-details mb-0">14:00</p>
           <p class="location-details">Casa Museu José Maria da Fonseca</p>
+          
         </div>
+
+      </div>
+      <div class="text-center">
+        <button class="mt-2 mb-5 " onclick="location.href='Casamento.html'" type="button">Saber mais <img  src="Lib/Images/Icon-right-arrow.png" alt="icon"></button>
       </div>
     </section>
 
     <!-- Our Story Short -->
-    <section class="gradient-base" style="height: 400px;">
-
+    <section class="gradient-base" style="padding: 60px;">
+        <div class="container">
+          <div class="row">
+            <div class="col text-center d-flex justify-content-center align-items-center flex-column">
+              <img class="our-story-image" src="Lib/Images/ANossaHistoria.png" alt="ANossaHistória">
+            </div>
+            <div class="col text-center d-flex justify-content-center align-items-center flex-column">
+              <p class="know-our-story-text" >Conhece a nossa história!</p>
+              <button onclick="location.href='Historia.html'" type="button">Clica aqui <img  src="Lib/Images/Icon-right-arrow.png" alt="icon"></button>
+            </div>
+          </div>
+        </div>
     </section>
 
+
+    <!-- Footer -->    
+    <section style="min-height: 300px; background: url(Lib/Images/FooterImage.png); background-size: cover; background-position: center;" >
+          <div class="text-center">
+            <img  style="width: 100px; height: 100px; transform: translateY(30px);" src="Lib/Images/Logo.png" alt="logo">
+          </div>
+          <p class="footer-text text-center" >Contamos com a tua presença!</p>
+    </section>    
 
 
 
